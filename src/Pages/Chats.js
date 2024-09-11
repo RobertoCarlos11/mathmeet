@@ -1,4 +1,3 @@
-import './Home.css'
 import SideBar from '../Components/SideBar.js'
 
 function Home()
