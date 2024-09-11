@@ -1,0 +1,46 @@
+.SideBarList{
+    background-color: #0c0d21;
+    width:150px;
+    height:100vh;
+}
+
+
+.SideBarList .row{
+    height:200px;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.SideBarItems .Icon-User
+{
+    color:#1e2142;
+    width: 50%;
+    transform: scale(1);
+    transition: 250ms;
+    display: flex;
+    padding:10px;
+    justify-content: center;
+}
+.SideBarItems .Icon{
+    color:#b0e7d4;
+    width: 50%;
+    transform: scale(1);
+    transition: 250ms;
+    display: flex;
+    padding:10px;
+    justify-content: center;
+}
+
+
+.SideBarItems .Icon:hover{
+    border-radius: 15px;
+    transform: scale(1.5);
+    transition: 250ms;
+}
+
+
+.SideBarItems .Icon-User:hover{
+    border-radius: 15px;
+    transform: scale(1.5);
+    transition: 250ms;
+}
