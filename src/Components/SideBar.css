@@ -4,9 +4,12 @@
     height:100vh;
 }
 
+.SideBarInfo{
+    background-color:rgba(118,122,182,255);
+}
 
 .SideBarList .row{
-    height:200px;
+    height:100px;
     list-style-type: none;
     justify-content: center;
 }
@@ -18,15 +21,16 @@
     transform: scale(1);
     transition: 250ms;
     display: flex;
-    padding:10px;
+    padding:5px;
     justify-content: center;
 }
+
 .SideBarItems .Icon{
     color:#b0e7d4;
     width: 50%;
     transform: scale(1);
     transition: 250ms;
-    display: flex;
+    display: flex; 
     padding:10px;
     justify-content: center;
 }

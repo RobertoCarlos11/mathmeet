@@ -8,7 +8,11 @@ function SideBar(){
         <div className="SideBar">
             <div className='SideBarList'>
             <ul className="SideBarItems">
-            <li className="row User" id={window.location.pathname == "/User" ? "active" : ""}><div className='Icon-User'> <PersonIcon style={{fontSize:"64px"}}/></div> </li>
+            <li className="row User" id={window.location.pathname == "/User" ? "active" : ""}>
+            <Link to="/">
+            <div className='Icon-User'> <PersonIcon style={{fontSize:"32px"}}/></div>
+            </Link>
+            </li>
             {SideBarData.map((val,key) =>{
                 return(
                <li 
@@ -16,7 +20,7 @@ function SideBar(){
                key = {key}
                id = {window.location.pathname == val.link ? "active" : ""}
                >
-                <Link to = {val.link} >
+                <Link to = {val.link}>
                <div className="Icon">{val.icon}</div>
                </Link>
                 </li>
