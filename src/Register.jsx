@@ -35,7 +35,7 @@ const Register = () => {
         </div>
         <div className="btn">
         <Link to ="/">
-        <button className ="btn-submit" > Registrar </button> 
+        <button className ="btn-submit"> Registrar </button> 
         </Link>  
         </div>  
        </form>  

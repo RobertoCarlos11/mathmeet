@@ -3,20 +3,16 @@
     height:100vh;
 }
 
-.Chats{
+.Chats,.Shop,.Assignments{
     display: flex;
     flex-direction: row;
 }
 
-.SideBarInfo{
-    display:flex;
-    flex:20%;
-}
-
 .Content-container{
-    flex:75%;
+    flex:45%;
     display: flex;
 }
+
 .SideBar{
     display: flex;
     flex:5%;

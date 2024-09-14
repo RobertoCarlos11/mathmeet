@@ -48,7 +48,7 @@ span{
   text-align: center;
 }
 
-h2,h1{
+.IniciarSesionRegistrar,.Title{
 font-weight: 500;
 font-size:50px;
 letter-spacing: 2.5px;
@@ -59,7 +59,7 @@ letter-spacing: 2.5px;
     color: rgba(118,122,182,255);
   }
   
-  h2,h1,p{
+  .IniciarSesionRegistrar,.Title,.Register{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgba(118,122,182,255);
   }

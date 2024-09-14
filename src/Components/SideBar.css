@@ -2,16 +2,77 @@
     background-color: #0c0d21;
     width:150px;
     height:100vh;
+    box-shadow: 100px 100px 5px #0c0d21;
 }
 
 .SideBarInfo{
-    background-color:rgba(118,122,182,255);
+    background-color:#211e41;
+    display:flex;
+    flex:60%;
+    justify-content: center;
 }
 
+.Chat
+{
+    width: 90%;
+}
+
+.ChatContainer
+{
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0 10px 0;
+    border-bottom: 2px solid #0e0b21;
+    cursor: pointer;
+}
+.HourMessage{
+    width: 100%;
+    color:#0e0b21;
+    text-align: right;
+    flex: 25%;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.GroupInformation{
+    flex-direction: column;
+    display: flex;
+    flex: 75%;
+    justify-content: center;
+}
+
+.GroupName
+{
+    font-size: 30px;
+    letter-spacing: 1;
+    font-weight: bold;
+}
+.GroupName, .LastMessageSent
+{
+    color:#a19ae6;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.ImgGroup{ 
+    margin:10px;
+    width: 65px;
+    height:65px;
+    border-radius: 100%;
+    background-color: #1e2142;
+    align-self: center;
+}
 .SideBarList .row{
     height:100px;
     list-style-type: none;
     justify-content: center;
+}
+
+.Chat 
+{
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .SideBarItems .Icon-User
