@@ -8,7 +8,7 @@ import SideBarInfo from './SideBarInfo.jsx'
 
 import AddIcon from '@mui/icons-material/Add';
 
-const SideBar = () =>{
+const SideBar = () => {
 
     const [pagina,Setpagina] = useState(window.location.pathname);
     console.log(window.location.pathname);
