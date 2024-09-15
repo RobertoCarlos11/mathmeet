@@ -7,9 +7,35 @@
 
 .SideBarInfo{
     background-color:#211e41;
-    display:flex;
     flex:60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#AddChat
+{
+    width: 90%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color:#a19ae6;
+    background-color: transparent;
+    border-style: none;
+    margin: 10px;
+    border-radius: 10px;
+    padding:5px;
+    cursor: pointer;
+    display: flex;
+    box-sizing: border-box;
     justify-content: center;
+    align-items: center;
+    transition: 150ms;
+}
+
+#AddChat:hover{
+    
+    color:#0e0b21;
+    background-color:#a19ae6;
 }
 
 .Chat

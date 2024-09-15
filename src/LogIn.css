@@ -66,6 +66,7 @@ letter-spacing: 2.5px;
   
   .inputbox input{
     border-width: 0;
+    border-style: none;
     border-bottom:2px solid rgba(118,122,182,255);
     background:transparent;
     outline: 0;

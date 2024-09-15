@@ -4,6 +4,8 @@ import PersonIcon from '@mui/icons-material/Person';
 import {Link} from 'react-router-dom'
 import GroupImg from '../Images/DAMN.png'
 
+import AddIcon from '@mui/icons-material/Add';
+
 function SideBar(){
     return(
         <div className="SideBar">
@@ -65,6 +67,7 @@ function SideBar(){
                 </div>
                </li>
             </ul>
+            <button id="AddChat"><AddIcon/> Nuevo Chat </button>
             </div>
 
         </div>
