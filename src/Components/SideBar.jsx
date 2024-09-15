@@ -1,12 +1,18 @@
 import './SideBar.css'
+import { useState } from 'react';
 import {SideBarData} from './SideBarData'
 import PersonIcon from '@mui/icons-material/Person';
 import {Link} from 'react-router-dom'
 import GroupImg from '../Images/DAMN.png'
+import SideBarInfo from './SideBarInfo.jsx'
 
 import AddIcon from '@mui/icons-material/Add';
 
-function SideBar(){
+const SideBar = () =>{
+
+    const [pagina,Setpagina] = useState(window.location.pathname);
+    console.log(window.location.pathname);
+
     return(
         <div className="SideBar">
             <div className='SideBarList'>
@@ -32,44 +38,7 @@ function SideBar(){
             </ul>
 
             </div>
-            <div className='SideBarInfo'>
-            <ul className='Chat'>
-                <li>
-                    <div className='ChatContainer'>
-                    <img src={GroupImg} className='ImgGroup'/>
-                    <div className='GroupInformation'>
-                    <h1 className="GroupName"> GRUPO 1</h1>
-                    <p className="LastMessageSent">Ultimo Mensaje Enviado</p>
-                    </div>
-                    <p className="HourMessage">9:54 AM</p>
-                </div>
-               </li>
-               
-               <li>
-                    <div className='ChatContainer'>
-                    <img src={GroupImg} className='ImgGroup'/>
-                    <div className='GroupInformation'>
-                    <h1 className="GroupName"> GRUPO 2</h1>
-                    <p className="LastMessageSent">Ultimo Mensaje Enviado</p>
-                    </div>
-                    <p className="HourMessage">9:54 AM</p>
-                </div>
-               </li>
-
-               <li>
-                    <div className='ChatContainer'>
-                    <img src={GroupImg} className='ImgGroup'/>
-                    <div className='GroupInformation'>
-                    <h1 className="GroupName"> GRUPO 3</h1>
-                    <p className="LastMessageSent">Ultimo Mensaje Enviado</p>
-                    </div>
-                    <p className="HourMessage">9:54 AM</p>
-                </div>
-               </li>
-            </ul>
-            <button id="AddChat"><AddIcon/> Nuevo Chat </button>
-            </div>
-
+            <SideBarInfo Page={pagina}/>
         </div>
     );
 }

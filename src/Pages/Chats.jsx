@@ -10,7 +10,7 @@ function Home()
 {
     return(
         <div className='Chats'>
-            <SideBar/>
+            <SideBar/>       
             <div className='Content-container'>
             <div className='Chat-Container'>
             <div className='Messages-Container'>
